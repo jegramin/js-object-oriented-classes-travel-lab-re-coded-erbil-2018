@@ -17,8 +17,9 @@ class Route{
     this.beginningLocation = beginningLocation;
   }
   blocksTravelled(){
-    //let vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
-    return eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
+    let vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
+    let horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
+    
   }
   beginningLocation(){
     
