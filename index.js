@@ -21,7 +21,7 @@ class Route{
     let horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
     return vertical + horizontal;
   }
-  estimatedTime(){
+  estimatedTime(peak){
     if(peak){
       let vertical = (this.endingLocation.vertical - this.beginningLocation.vertical)/2;
     let horizontal = (eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal))/2;
