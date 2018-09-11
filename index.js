@@ -21,10 +21,5 @@ class Route{
     let horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
     return vertical + horizontal;
   }
-  beginningLocation(){
-    
-  }
-  endingLocation(){
-    
-  }
+  
 }
