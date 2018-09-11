@@ -21,5 +21,9 @@ class Route{
     let horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
     return vertical + horizontal;
   }
-  
+  estimatedTime(){
+    let vertical = (this.endingLocation.vertical - this.beginningLocation.vertical)/3;
+    let horizontal = (eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal))/3;
+    return vertical + horizontal;
+  }
 }
